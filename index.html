@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Mohini Singh - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #fffde7;
+            color: #263238;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .left {
+            color: #26a69a;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: #004d40;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        nav ul li a:hover {
+            color: #26a69a;
+            font-size: 1.05rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #26a69a;
+            height: 1.2px;
+            margin: 80px 84px;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 140px 0;
+        }
+
+        .leftSection {
+            width: 35%;
+            font-size: 1.7rem;
+        }
+
+       
+
+        .purple {
+            color: #14746a;
+            font-weight: bold;
+            text-shadow: 0.5px 0.5px 1px #ccc;
+        }
+
+        .grey {
+            color: #757575;
+        }
+
+        .section {
+            max-width: 80vw;
+            margin: auto;
+            padding: 40px 0;
+        }
+
+        .section h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            background: #e0e0e0;
+            width: 80vw;
+            height: 2px;
+            margin: 20px 0;
+        }
+
+        .project,
+        .publication {
+            margin: 20px 0;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #26A69A;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #00796B;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background: #00796B;
+            padding: 10px 15px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .skill i {
+            margin-right: 8px;
+        }
+
+        .skill i:hover {
+            color: #FFEB3B;
+            transform: scale(1.1);
+            transition: all 0.3s ease;
+        }
+
+
+        footer {
+            background-color: #26A69A;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        .contact-info p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+            color: #37474F;
+        }
+
+        .contact-info a {
+            color: #00796B;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info i {
+            margin-right: 8px;
+            color: #00796B;
+            text-align: center;
+        }
+
+        .contact-info p {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .firstSection {
+                flex-direction: column;
+                margin: 50px 0;
+            }
+
+            .leftSection,
+            .rightSection img {
+                width: 90%;
+                text-align: center;
+            }
+
+            .rightSection img {
+                width: 100%;
+            }
+        }
+        @media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+  nav .left {
+    margin-bottom: 10px;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Dr. MOHINI SINGH</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#academic">Academic Background</a></li>
+                    <li><a href="#teaching">Teaching Experience</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hello! I am <span class="purple">Dr. Mohini Singh</span>,
+                a passionate educator in the field of Computer Science. I am dedicated to
+                fostering a love for learning and innovation in my students. Explore my portfolio to learn more about my
+                academic journey, research, and interests.
+            </div>
+           
+        </section>
+        <hr>
+        <section id="academic" class="section">
+            <h1>Academic Background</h1>
+            <div class="box"></div>
+            <p><strong>Ph.D. in Computer Science</strong> (2018 - 2024) - Banaras Hindu University, Varanasi, UP, India
+            </p>
+            <p><strong>M.Tech. in Computer Science</strong> (2015 - 2017) - Banasthali Vidyapith, Jaipur, Rajasthan,
+                India</p>
+            <p> <span class="grey">Dissertation: "End-to-End Congestion Control in Software Defined Network"</span></p>
+            <p><strong>B.Tech. in Computer Science & Engineering</strong> (2011 - 2015) - Dr. A.P.J. Abdul Kalam
+                Technical University, Lucknow, UP, India</p>
+            <p><strong>Intermediate, Science</strong> (2010) - Uttar Pradesh Board, Uttar Pradesh, India</p>
+            <p><strong>High School</strong> (2008) - Uttar Pradesh Board, Uttar Pradesh, India</p>
+        </section>
+        <hr>
+        <section id="teaching" class="section">
+            <h1>Teaching Experience</h1>
+            <div class="box"></div>
+            <div class="project">
+                <h3>Assistant Professor</h3>
+                <p>Department of Computer Science Engineering, Coer University (2025 - Present)</p>
+                <p>Responsibilities include teaching undergraduate and postgraduate courses, supervising student
+                    projects, and conducting research.</p>
+            </div>
+            <div class="project">
+                <h3>Assistant Professor</h3>
+                <p>Department of Computer Science, Banaras Hindu University (2024 - 2025)</p>
+                <p>Responsibilities include teaching undergraduate and postgraduate courses, supervising student
+                    projects, and conducting research.</p>
+            </div>
+            <div class="project">
+                <h3>Guest Lecturer</h3>
+                <p>Department of Computer Science, Banasthali Vidyapith (2017 - 2018)</p>
+                <p>Delivered lectures on advanced topics in computer science and guided students in their academic
+                    projects.</p>
+            </div>
+            <div class="project">
+                <h3>Research Intern</h3>
+                <p>Jawaharlal Nehru University, Delhi (2016 - 2017)</p>
+                <p>Assisted in research projects and contributed to academic publications.</p>
+            </div>
+        </section>
+        <hr>
+        <section id="publications" class="section">
+            <h1>Publications</h1>
+            <div class="box"></div>
+            <div class="publication">
+                <h3>Encounter Count and Interaction Time Based Routing Protocol for Opportunistic Networks</h3>
+                <p>Scopus Indexed, SN Computer Science, 2023 - Status: Accepted and Published</p>
+            </div>
+            <div class="publication">
+                <h3>Optimal Cloudlet Selection in Edge Computing for Resource Allocation</h3>
+                <p>Scopus Indexed, SN Computer Science, 2023 - Status: Accepted and Published</p>
+            </div>
+            <div class="publication">
+                <h3>Average Time Based ProPHET Routing Protocol for Opportunistic Networks</h3>
+                <p>Scopus Indexed, International Conference on Advanced Network Technology and Intelligent Computing
+                    (ANTIC-2022) - Status: Accepted and Published</p>
+            </div>
+            <div class="publication">
+                <h3>Empirical Analysis of Performance of Routing Protocols in Opportunistic Networks</h3>
+                <p>Scopus Indexed, International Conference on Advanced Network Technology and Intelligent Computing
+                    (ANTIC-2021) - Status: Accepted and Published</p>
+            </div>
+            <div class="publication">
+                <h3>Security in Opportunistic Networks</h3>
+                <p>Book Chapter, Opportunistic Network, Taylor & Francis Group - Status: Accepted and Published</p>
+            </div>
+            <div class="publication">
+                <h3>Model of Congestion Control in Software Defined Network</h3>
+                <p>UGC Approved, International Journal of Control Theory and Application - Status: Accepted and
+                    Published</p>
+            </div>
+            <div class="publication">
+                <h3>Statistical Analysis and Performance of Routing Protocol Using Design of Experiments</h3>
+                <p>Status: Revision</p>
+            </div>
+            <div class="publication">
+                <h3>Multi Layer Neural Network Based Context Aware Routing Algorithm for Opportunistic Network</h3>
+                <p>Status: Under Review</p>
+            </div>
+            <div class="publication">
+                <h3>Statistical Analysis of Multi Neural Based Context Aware Routing Algorithm for Opportunistic Network
+                </h3>
+                <p>Status: Under Review</p>
+            </div>
+            <div class="publication">
+                <h3>Investigating the Impact of Control Factors on Performance Evaluation of a Routing Protocol for
+                    OppNETs Using Taguchi and Grey Methods</h3>
+                <p>Status: Under Review</p>
+            </div>
+        </section>
+        <hr>
+        <section id="projects" class="section">
+            <h1>Projects</h1>
+            <div class="box"></div>
+            <div class="project">
+                <h3>Impact of Control Factors on the QoS parameters of ECIT Routing Protocols Using Taguchi and Grey
+                    Relational Method</h3>
+                <p>Status: In Process</p>
+            </div>
+            <div class="project">
+                <h3>Context Aware Based Routing Protocols for Opportunistic Network Using Machine Learning</h3>
+                <p>Status: In Process</p>
+            </div>
+        </section>
+        <hr>
+        <section id="skills" class="section">
+            <h1>Skills</h1>
+            <div class="box"></div>
+            <div class="skills-container">
+                <div class="skill"><i class="fas fa-chart-line"></i> Statistical Analysis</div>
+                <div class="skill"><i class="fab fa-cuttlefish"></i> C/C++</div>
+                <div class="skill"><i class="fab fa-java"></i> Java</div>
+                <div class="skill"><i class="fab fa-python"></i> Python</div>
+                <div class="skill"><i class="fab fa-linux"></i> Linux</div>
+                <div class="skill"><i class="fas fa-cogs"></i> MATLAB</div>
+            </div>
+        </section>
+        <hr>
+        <section id="achievements" class="section">
+            <h1>Achievements</h1>
+            <div class="box"></div>
+            <ul>
+                <li>Qualified NET Computer Application (CS)</li>
+                <li>Qualified RET Fellowship, Computer Science, Banaras Hindu University</li>
+                <li>Qualified TFB Fellowship, Institute of Eminence, Banaras Hindu University</li>
+                <li>Qualified SRG Fellowship, Institute of Eminence, Banaras Hindu University</li>
+                <li>First position in workshop "Two Week Summer School on Intelligent of Things (IIOT)"</li>
+                <li>Participated in state-level competition for "Scout and Guide" organization</li>
+                <li>Sport Champion at college level competition in Buddha Institute of Technology</li>
+            </ul>
+        </section>
+        <hr>
+        <section id="contact" class="section">
+            <h1>Contact Me</h1>
+            <div class="box"></div>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i>Email: <a
+                        href="mailto:mohini.rajni.singh@gmail.com">mohini.rajni.singh@gmail.com</a></p>
+                <p><i class="fas fa-envelope"></i>Email: <a
+                        href="mailto:mohini.singh4@bhu.ac.in">mohini.singh4@bhu.ac.in</a></p>
+                <p><i class="fas fa-phone"></i>Phone: <a href="tel:+91 8851030365">+91 8851030365</a></p>
+                <p><i class="fas fa-phone"></i>Phone: <a href="tel:+91 9455864514">+91 9455864514</a></p>
+            </div>
+            <form action="https://formsubmit.co/mohini.rajni.singh@gmail.com" method="POST" class="contact-form">
+                <!-- Prevent spam by turning off CAPTCHA and redirecting -->
+                <input type="hidden" name="_captcha" value="false">
+               
+
+
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Dr. Mohini Singh. All Rights Reserved.</p>
+        <p>Designed with ❤️ for academic and research excellence.</p>
+    </footer>
+</body>
+
+</html>
